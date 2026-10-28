@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --color-surface: #fbf8ff;
+  --color-surface-container: #eeedf7;
+  --color-surface-dim: #dad9e3;
+  --color-petal-50: #fff1f2;
+  --color-petal-100: #ffe4e6;
+  --color-petal-200: #fecdd3;
+  --color-petal-300: #fda4af;
+  --color-petal-400: #fb7185;
+  --color-petal-500: #f472b6;
+  --color-petal-600: #e11d48;
+  --color-petal-700: #be123c;
+  --color-petal-dark: #a43073;
+  --color-teal-soft: #ccfbf1;
+  --color-teal-fresh: #2dd4bf;
+  --color-teal-deep: #0d9488;
+  --color-sunny-amber: #f59e0b;
+  --color-sunny-light: #fef08a;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #fbf8ff;
+  color: #1a1b22;
+}
+
+/* Custom Soft Ambient Glows as defined in design system */
+.shadow-petal-soft {
+  box-shadow: 0 8px 24px -4px rgba(244, 114, 182, 0.16);
+}
+
+.shadow-petal-active {
+  box-shadow: 0 12px 32px -4px rgba(244, 114, 182, 0.28), 0 4px 12px -2px rgba(45, 212, 191, 0.20);
+}
+
+.shadow-teal-soft {
+  box-shadow: 0 8px 24px -4px rgba(45, 212, 191, 0.2);
+}
+
+.shadow-cloud-pillow {
+  box-shadow: 0 10px 30px -6px rgba(164, 48, 115, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Glassmorphic Pill Overlays */
+.glass-cloud {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(244, 114, 182, 0.14);
+}
+
+/* Smooth organic bloom pulse */
+@keyframes bloomPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-bloom-pulse {
+  animation: bloomPulse 4s ease-in-out infinite;
+}
+
+/* Hide scrollbar for clean horizontal carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

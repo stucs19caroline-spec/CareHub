@@ -1,0 +1,6 @@
+{
+  "name": "Petal & Cloud",
+  "description": "Whimsical, botanical-inspired personal healthcare and symptom tracking sanctuary designed to transform clinical dread into gentle self-care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
